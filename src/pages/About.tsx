@@ -1,11 +1,20 @@
-﻿import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useFadeUp } from '../hooks/useFadeUp';
 import PageHero from '../components/PageHero';
 import CTASection from '../components/CTASection';
 import Alert from '../components/Alert';
 
-const team = [
-  { avatar: '🧑‍💼', avatarBg: 'var(--blue-l)', role: 'Founder / CEO', dept: 'Product & Strategy', bio: "Master's student at CMU Africa. Former boarding school student — this problem is personal. Leads product vision, investor relations, school partnerships, and business strategy." },
+type TeamMember = {
+  photo?: string;
+  avatar?: string;
+  avatarBg: string;
+  role: string;
+  dept: string;
+  bio: string;
+};
+
+const team: TeamMember[] = [
+  { photo: '/founder.png', avatarBg: 'var(--blue-l)', role: 'Founder / CEO', dept: 'Product & Strategy', bio: "Master's student at CMU Africa. Former boarding school student — this problem is personal. Leads product vision, investor relations, school partnerships, and business strategy." },
   { avatar: '👨‍💻', avatarBg: 'var(--green-l)', role: 'Co-Founder / CTO', dept: 'Software Engineering', bio: 'Full-stack engineer. Builds the backend API, mobile money integration, parent web app, and admin dashboard. Owns all software architecture decisions.' },
   { avatar: '⚙️', avatarBg: 'var(--orange-l)', role: 'Hardware Lead', dept: 'Electrical & Computer Engineering', bio: 'ECE student. Designs and builds the RFID card readers and custom vending machine hardware prototypes. Bridges the physical and digital worlds.' },
 ];
@@ -78,9 +87,24 @@ export default function About() {
           <h2 className="section-title">Who's building LooPeyi</h2>
           <p className="section-sub">A small, focused team with the right skills and the deepest possible understanding of the problem.</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 24, marginBottom: 32 }}>
-            {team.map(({ avatar, avatarBg, role, dept, bio }) => (
+            {team.map(({ photo, avatar, avatarBg, role, dept, bio }) => (
               <div key={role} className="approach-card fade-up">
-                <div className="approach-avatar" style={{ background: avatarBg }}>{avatar}</div>
+                {photo ? (
+                  <img
+                    src={photo}
+                    alt={role}
+                    style={{
+                      width: 96, height: 96, borderRadius: '50%',
+                      objectFit: 'cover', objectPosition: 'top',
+                      margin: '0 auto 20px',
+                      border: '3px solid var(--blue-l)',
+                      boxShadow: '0 4px 16px rgba(26,107,255,.15)',
+                      display: 'block',
+                    }}
+                  />
+                ) : (
+                  <div className="approach-avatar" style={{ background: avatarBg }}>{avatar}</div>
+                )}
                 <h3>{role}</h3>
                 <div className="role">{dept}</div>
                 <p>{bio}</p>
