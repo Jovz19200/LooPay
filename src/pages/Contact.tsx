@@ -200,7 +200,7 @@ export default function Contact() {
         label="Get in Touch"
         labelColor="var(--green)"
         title={<>Let's build something<br />that actually matters</>}
-        sub="Whether you are an investor, a school, a co-founder, or a researcher — we want to hear from you."
+        sub="Whether you are an investor, a school, a co-founder, or a researcher, we want to hear from you."
       />
 
       <section className="section-white content-section">

@@ -22,7 +22,7 @@ const team: TeamMember[] = [
     name: 'Johovanis Niyogisubizo',
     role: 'Founder / CEO',
     dept: 'Product & Strategy',
-    bio: "Master's student at CMU Africa. Former boarding school student — this problem is personal. Leads product vision, investor relations, school partnerships, and business strategy.",
+    bio: "Master's student at CMU Africa. Former boarding school student. This problem is personal. Leads product vision, investor relations, school partnerships, and business strategy.",
   },
   {
     initials: 'CTO',
@@ -64,7 +64,7 @@ export default function About() {
         <div className="container">
           <div className="mission-block fade-up">
             <h2>Our Mission</h2>
-            <p>To give every boarding school student in Rwanda financial dignity, autonomy, and safety — not as a privilege, but as a right — by building the digital payment infrastructure the education system has always needed.</p>
+            <p>To give every boarding school student in Rwanda the financial dignity, autonomy, and safety they deserve, by building the digital payment infrastructure the education system has always needed.</p>
           </div>
         </div>
       </section>
@@ -77,7 +77,7 @@ export default function About() {
           <div className="two-col">
             <div>
               <p style={{ fontSize: 16, lineHeight: 1.75, color: 'var(--text)', marginBottom: 20 }}>
-                LooPeyi started with a simple, frustrating reality: boarding school students in Rwanda hand all their money to school administrators and then wait — sometimes days — to access their own funds.
+                LooPeyi started with a simple, frustrating reality: boarding school students in Rwanda hand all their money to school administrators and then wait, sometimes for days, to access their own funds.
               </p>
               <p style={{ fontSize: 16, lineHeight: 1.75, color: 'var(--text)', marginBottom: 20 }}>
                 The problem is not a lack of technology. Rwanda has one of Africa's most advanced mobile money ecosystems. 77% of adults have MoMo wallets. The infrastructure exists. What was missing was a bridge between that infrastructure and the boarding school campus.
@@ -94,7 +94,7 @@ export default function About() {
                 <strong>CMU Africa connection.</strong> We are based at Carnegie Mellon University Africa in Kigali, giving us access to the Upanzi Network (Gates Foundation-funded fintech research), CyLab-Africa (cybersecurity for African financial systems), and a global network of researchers and investors.
               </Alert>
               <Alert variant="green" icon={<Globe2 size={16} />}>
-                <strong>Rwanda-first, Africa-next.</strong> We are starting in Rwanda because we know it best and the gap is clearest here. The same infrastructure deploys in Uganda, Kenya, Tanzania, Burundi, and DRC — all markets with the same problem and similar mobile money rails.
+                <strong>Rwanda-first, Africa-next.</strong> We are starting in Rwanda because we know it best and the gap is clearest here. The same infrastructure deploys in Uganda, Kenya, Tanzania, Burundi, and DRC. All share the same problem and operate on similar mobile money rails.
               </Alert>
             </div>
           </div>
@@ -147,7 +147,7 @@ export default function About() {
           </div>
           <div className="seeking-card fade-up">
             <h3>We are actively seeking co-founders</h3>
-            <p>If you have experience in fintech, hardware, school operations, or African startup ecosystems — and you believe in this mission — we want to hear from you.</p>
+            <p>If you have experience in fintech, hardware, school operations, or African startup ecosystems, and you believe in this mission, we want to hear from you.</p>
             <Link to="/contact" className="btn btn-primary">Get in Touch</Link>
           </div>
         </div>
@@ -172,7 +172,7 @@ export default function About() {
 
       <CTASection
         heading="Join the mission"
-        sub="Whether you are a potential co-founder, school partner, investor, or researcher — there is a role for you in building LooPeyi."
+        sub="Whether you are a potential co-founder, school partner, investor, or researcher, there is a role for you in building LooPeyi."
         buttons={[
           { to: '/contact', label: 'Get in Touch',    variant: 'primary' },
           { to: '/market',  label: 'View the Market', variant: 'ghost' },
