@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A6BFF"/>
+      <stop offset="100%" stop-color="#0046CC"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded square background -->
+  <rect width="32" height="32" rx="8" fill="url(#bg)"/>
+  <!-- Outer diamond ring -->
+  <path d="M16 4.5 L27.5 16 L16 27.5 L4.5 16 Z"
+        fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+  <!-- Inner diamond (filled) -->
+  <path d="M16 10.5 L21.5 16 L16 21.5 L10.5 16 Z" fill="white"/>
+</svg>
