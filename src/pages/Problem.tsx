@@ -14,7 +14,7 @@ const brokenCycle = [
   { num: 1, bg: 'var(--muted)',   title: 'Visiting day arrives',                  body: 'Parents travel to school, often from far away. They hand cash to their child or directly to administration. No official record, no receipt, no confirmation of amount received.',                        icon: <Bus       size={24} /> },
   { num: 2, bg: 'var(--orange)',  title: 'Admin takes custody of all funds',       body: 'The school administration collects student money and holds it in a cash box or informal ledger. Students cannot access it independently. There is no audit trail.',                                  icon: <Building2 size={24} /> },
   { num: 3, bg: 'var(--red)',     title: 'Student needs money. Bureaucracy begins.', body: 'When a student needs funds for soap, a pen, or medicine, they must formally request it from an administrator who decides whether the need is valid. They are often told to come back later.', icon: <Clock     size={24} /> },
-  { num: 4, bg: 'var(--red)',     title: 'Come back Friday.',                      body: 'Request Wednesday. Receive Friday. This is not hypothetical — it is the lived experience of boarding school students across Rwanda. Urgent needs go unmet.',                                        icon: <CircleSlash size={24} /> },
+  { num: 4, bg: 'var(--red)',     title: 'Come back Friday.',                      body: 'Request Wednesday. Receive Friday. This is the lived experience of boarding school students across Rwanda. Urgent needs go unmet for days.',                                                    icon: <CircleSlash size={24} /> },
   { num: 5, bg: 'var(--muted)',   title: 'Parents remain completely blind',        body: 'The parent who sent money has no idea if it was received, how much remains, or how it was spent. If they cannot attend visiting day, they send money through third parties with no tracking.',       icon: <EyeOff    size={24} /> },
 ];
 
@@ -30,7 +30,7 @@ const painPoints = [
 const scaleStats = [
   { value: '100,000+', label: "Students affected in Rwanda's boarding schools", color: 'var(--red)' },
   { value: '400+',     label: 'Boarding secondary schools in Rwanda',           color: 'var(--orange)' },
-  { value: '3×',       label: 'Terms per year — problem repeats every term',    color: 'var(--purple)' },
+  { value: '3×',       label: 'Terms per year. The problem repeats every single term.',    color: 'var(--purple)' },
   { value: '$0',       label: 'Technology currently deployed to fix this',      color: 'var(--blue)' },
 ];
 
@@ -91,7 +91,7 @@ export default function Problem() {
             ))}
           </div>
           <Alert variant="orange" icon={<AlertTriangle size={16} />}>
-            <strong>The administration is not always the enemy.</strong> Most school administrators are overwhelmed, managing dozens of students' cash with no tools, no systems, and no training. LooPeyi solves the problem for them too — removing the burden and liability of holding student funds entirely.
+            <strong>The administration is not always the enemy.</strong> Most school administrators are overwhelmed, managing dozens of students' cash with no tools, no systems, and no training. LooPeyi solves the problem for them too, removing the burden and liability of holding student funds entirely.
           </Alert>
         </div>
       </section>

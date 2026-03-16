@@ -27,8 +27,8 @@ const whyRwanda = [
   { icon: <Landmark    size={22} />, bg: 'var(--green-l)',  color: 'var(--green)',  title: 'Pro-fintech government',    body: "Rwanda's Vision 2050 and digital economy strategy support fintech innovation. BNR Regulation 74/2023 creates a clear licensing framework." },
   { icon: <Rocket      size={22} />, bg: 'var(--orange-l)', color: 'var(--orange)', title: 'First mover advantage',     body: 'Ugandan competitors (Kawallet with 62K users, DesisPay, Xazu) have not entered Rwanda. The window is open.' },
   { icon: <TrendingUp  size={22} />, bg: 'var(--purple-l)', color: 'var(--purple)', title: 'Growing digital literacy',  body: '77% of adults use mobile money; 19% use it daily. We are channeling existing habits, not creating new ones.' },
-  { icon: <Target      size={22} />, bg: 'var(--red-l)',    color: 'var(--red)',    title: 'Clear target market',       body: 'Boarding school students are a concentrated, captive audience — 100 to 2,000 students per school. Easy to onboard, high daily engagement.' },
-  { icon: <Globe2      size={22} />, bg: 'var(--yellow-l)', color: 'var(--yellow)', title: 'East Africa expansion',     body: 'After Rwanda, the same model deploys in Burundi, DRC, Tanzania, Uganda, and Kenya — all with similar boarding school systems and mobile money infrastructure.' },
+  { icon: <Target      size={22} />, bg: 'var(--red-l)',    color: 'var(--red)',    title: 'Clear target market',       body: 'Boarding school students are a concentrated, captive audience. Each school has between 100 and 2,000 students, making onboarding straightforward and daily engagement consistently high.' },
+  { icon: <Globe2      size={22} />, bg: 'var(--yellow-l)', color: 'var(--yellow)', title: 'East Africa expansion',     body: 'After Rwanda, the same model deploys in Burundi, DRC, Tanzania, Uganda, and Kenya. All share similar boarding school systems and established mobile money infrastructure.' },
 ];
 
 const revStreams = [
@@ -49,9 +49,9 @@ const swot = [
   {
     cls: 'sw-s', heading: 'Strengths',
     items: [
-      'Real, painful problem — lived experience of the founder',
+      'A real, painful problem lived firsthand by the founder',
       'Rwanda has zero direct competitors today',
-      '77% mobile money penetration — rails already exist',
+      '77% mobile money penetration with existing payment rails',
       'Vending machines are a genuinely unique differentiator',
       'MVP buildable for under $1,250',
       'CMU Africa / Upanzi Network research support available',
@@ -70,7 +70,7 @@ const swot = [
   {
     cls: 'sw-o', heading: 'Opportunities',
     items: [
-      '400+ boarding schools in Rwanda — large captive market',
+      '400+ boarding schools in Rwanda: a large, concentrated target market',
       'Expandable to TVET schools and universities',
       'Government is actively pro-fintech and pro-digital',
       'East Africa expansion (Burundi, DRC, Tanzania, Kenya)',

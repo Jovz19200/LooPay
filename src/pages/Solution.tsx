@@ -12,7 +12,7 @@ const pillars = [
   {
     num: 'PILLAR 01', icon: <CreditCard size={40} />, cls: 'pf-blue',
     title: 'Digital Student Wallet',
-    sub: 'Each student receives a physical RFID/NFC card linked to a secure digital wallet account. The card is their key to the entire system — no smartphone required, no admin permission needed.',
+    sub: 'Each student receives a physical RFID/NFC card linked to a secure digital wallet account. The card is their key to the entire system. No smartphone required. No admin permission needed.',
     features: [
       { title: 'RFID/NFC Card',      body: 'Tap-to-pay card costs under $1 to issue. Durable PVC, personalised with student name and ID.' },
       { title: 'PIN Protection',     body: 'Every transaction requires a 4-digit PIN. A lost card cannot be used without it.' },
@@ -23,11 +23,11 @@ const pillars = [
   {
     num: 'PILLAR 02', icon: <Smartphone size={40} />, cls: 'pf-green',
     title: 'Parent Mobile Top-Up & Visibility',
-    sub: "Parents top up their child's wallet using MTN MoMo or Airtel Money — platforms they already use. From any phone, any time, from anywhere in Rwanda or abroad.",
+    sub: "Parents top up their child's wallet using MTN MoMo or Airtel Money, platforms they already use every day. From any phone, any time, from anywhere in Rwanda or abroad.",
     features: [
       { title: 'MTN MoMo / Airtel',      body: "Built on Rwanda's existing mobile money rails. Parents dial the same way they send money today." },
       { title: 'Instant Confirmation',   body: 'Both parent and student receive an SMS the moment a transfer completes. No more uncertainty.' },
-      { title: 'Full Spending History',  body: 'Parents view every transaction — what was bought, when, and how much — via the web app or USSD.' },
+      { title: 'Full Spending History',  body: 'Parents view every transaction: item purchased, amount, and timestamp, accessible via the web app or USSD.' },
       { title: 'Spending Limits',        body: 'Optional daily or weekly caps. Parents decide how much their child can spend per period.' },
     ],
   },
@@ -38,7 +38,7 @@ const pillars = [
     features: [
       { title: 'Custom Hardware',    body: "Machines built locally by ECE engineers, designed specifically for the boarding school context and Rwanda's environment." },
       { title: 'Card-Integrated',    body: 'The same RFID card used for the wallet works at the vending machine. One card, one ecosystem.' },
-      { title: 'Product Range',      body: 'Snacks, drinking water, soap, pens, notebooks, sanitary products — essentials students need every week.' },
+      { title: 'Product Range',      body: 'Snacks, drinking water, soap, pens, notebooks, and sanitary products: the everyday essentials students purchase each week.' },
       { title: '24/7 Access',        body: 'Open always. No waiting for admin, no office hours. Students access products whenever they need them.' },
     ],
   },
@@ -81,7 +81,7 @@ export default function Solution() {
         label="The Solution"
         labelColor="var(--green)"
         title={<>Three pillars.<br />One complete ecosystem.</>}
-        sub="LooPeyi does not patch the broken cash system — it replaces it entirely with a connected digital payment infrastructure built on Rwanda's existing mobile money rails."
+        sub="LooPeyi does not patch the broken cash system. It replaces it entirely with a connected digital payment infrastructure built on Rwanda's existing mobile money rails."
       />
 
       {/* Pillars */}
@@ -89,7 +89,7 @@ export default function Solution() {
         <div className="container">
           <div className="section-label" style={{ color: 'var(--blue)' }}>Overview</div>
           <h2 className="section-title">What LooPeyi is</h2>
-          <p className="section-sub">A closed-loop payment ecosystem — money enters via mobile money, lives in student wallets, and is spent inside the school. Transparent at every step.</p>
+          <p className="section-sub">A closed-loop payment ecosystem: money enters via mobile money, lives in student wallets, and is spent inside the school. Transparent at every step.</p>
           <Alert variant="blue" icon={<Info size={16} />}>
             <strong>Closed-loop design:</strong> Funds flow through a controlled digital environment. Students spend at school-connected points. Administrators never handle cash. Parents see everything in real time.
           </Alert>

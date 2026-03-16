@@ -16,7 +16,7 @@ const flowSteps = [
     body: "The parent dials MTN MoMo or Airtel Money from any phone. They enter their child's LooPeyi ID and send money. The process takes under 60 seconds and is available 24/7 from anywhere in Rwanda or abroad.",
     icon: <Send size={32} />,
     details: [
-      'Works from any phone — no smartphone required for parents',
+      'Works from any phone, including basic feature phones',
       'MTN MoMo and Airtel Money both supported',
       'Available 24/7 from anywhere in the world',
       'Minimum top-up can be as low as 500 RWF',
@@ -28,7 +28,7 @@ const flowSteps = [
     body: "The student's digital wallet balance updates in real time the moment the mobile money transfer completes. Both the parent and the student receive an SMS confirmation immediately.",
     icon: <Zap size={32} />,
     details: [
-      'Instant wallet credit — no delays',
+      'Instant wallet credit with no processing delays',
       'SMS confirmation to both parent and student',
       'Parent app balance view updates immediately',
       'Admin dashboard reflects the new balance in real time',
@@ -40,9 +40,9 @@ const flowSteps = [
     body: "At the vending machine or school canteen POS, the student taps their RFID card, enters their 4-digit PIN, and the transaction is processed instantly. No admin involvement at any point.",
     icon: <CreditCard size={32} />,
     details: [
-      'RFID tap — faster than cash',
+      'RFID tap payment, faster and safer than cash',
       'PIN required for every transaction',
-      'Works offline — syncs when internet is restored',
+      'Works offline, with automatic sync when connectivity returns',
       'Vending machine dispenses product immediately on approval',
     ],
   },
@@ -64,7 +64,7 @@ const flowSteps = [
     body: 'School administrators no longer touch student money. They access a clean dashboard showing wallet balances, transaction history, low-balance alerts, vending inventory, and financial summaries.',
     icon: <LayoutDashboard size={32} />,
     details: [
-      'Zero cash handling by admin — no liability',
+      'Zero cash handling by administrators. No financial liability.',
       'Automated monthly financial reports',
       'Low-balance alerts for individual students',
       'Vending inventory management and restock notifications',
@@ -142,7 +142,7 @@ export default function HowItWorks() {
       <PageHero
         label="How It Works"
         labelColor="var(--blue)"
-        title={<>From parent's phone<br />to student's hands — in seconds</>}
+        title={<>From parent's phone<br />to student's hands. In seconds.</>}
         sub="Five simple steps. Built entirely on infrastructure that already exists in Rwanda. No new bank accounts. No smartphones for students. No cash."
       />
 
