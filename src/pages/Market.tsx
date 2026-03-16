@@ -1,4 +1,8 @@
-﻿import { useFadeUp } from '../hooks/useFadeUp';
+import {
+  Smartphone, Landmark, Rocket, TrendingUp, Target, Globe2,
+  Percent, ShoppingBag, Building2, CreditCard,
+} from 'lucide-react';
+import { useFadeUp } from '../hooks/useFadeUp';
 import PageHero from '../components/PageHero';
 import CTASection from '../components/CTASection';
 import StatBox from '../components/StatBox';
@@ -6,44 +10,44 @@ import WhyCard from '../components/WhyCard';
 
 const marketStats = [
   { value: '100K+', label: 'Boarding school students in Rwanda', color: 'var(--blue)' },
-  { value: '400+', label: 'Boarding secondary schools', color: 'var(--green)' },
-  { value: '$27M+', label: 'Annual pocket money flow', color: 'var(--orange)' },
-  { value: '$810K', label: 'Revenue at 3% fee, full market', color: 'var(--purple)' },
+  { value: '400+',  label: 'Boarding secondary schools',         color: 'var(--green)' },
+  { value: '$27M+', label: 'Annual pocket money flow',           color: 'var(--orange)' },
+  { value: '$810K', label: 'Revenue at 3% fee, full market',     color: 'var(--purple)' },
 ];
 
 const bars = [
-  { label: 'Mobile money penetration', width: 77, val: '77%', style: { background: 'linear-gradient(90deg,var(--blue),var(--green))' } },
-  { label: 'Active MoMo users (adults)', width: 56, val: '56%', style: { background: 'var(--green)' } },
-  { label: 'Daily MoMo users', width: 19, val: '19%', style: { background: 'var(--orange)' } },
-  { label: 'Rwanda market captured today', width: 0, val: '0%', valStyle: { color: 'var(--red)' }, style: { background: 'var(--red)' } },
+  { label: 'Mobile money penetration',        width: 77, val: '77%', style: { background: 'linear-gradient(90deg,var(--blue),var(--green))' }, valStyle: {} },
+  { label: 'Active MoMo users (adults)',       width: 56, val: '56%', style: { background: 'var(--green)' },  valStyle: {} },
+  { label: 'Daily MoMo users',                 width: 19, val: '19%', style: { background: 'var(--orange)' }, valStyle: {} },
+  { label: 'Rwanda market captured today',     width:  0, val:  '0%', style: { background: 'var(--red)' },   valStyle: { color: 'var(--red)' } },
 ];
 
 const whyRwanda = [
-  { icon: '📱', bg: 'var(--blue-l)', color: 'var(--blue)', title: '9.8M MoMo accounts', body: "Rwanda has 9.8 million registered mobile money accounts across MTN and Airtel. The payment rails your parents will use are already in place. MTN's API is open to developers." },
-  { icon: '🏛️', bg: 'var(--green-l)', color: 'var(--green)', title: 'Pro-fintech government', body: "Rwanda's Vision 2050 and digital economy strategy support fintech innovation. BNR Regulation 74/2023 creates a clear licensing framework. Government wants solutions like this." },
-  { icon: '🚀', bg: 'var(--orange-l)', color: 'var(--orange)', title: 'First mover advantage', body: 'Ugandan competitors (Kawallet with 62K users, DesisPay, Xazu) have not entered Rwanda. The window is open — but it will close once they raise funding and look beyond Uganda.' },
-  { icon: '📈', bg: 'var(--purple-l)', color: 'var(--purple)', title: 'Growing digital literacy', body: '77% of adults use mobile money. 19% use it daily. The behavior is there. We are channeling existing habits — not creating new ones.' },
-  { icon: '🎯', bg: 'var(--red-l)', color: 'var(--red)', title: 'Clear target market', body: 'Boarding school students are a concentrated, captive audience. 100-2,000 students per school. Easy to onboard. High daily engagement.' },
-  { icon: '🌍', bg: 'var(--yellow-l)', color: 'var(--yellow)', title: 'East Africa expansion path', body: 'After Rwanda, the same model deploys in Burundi, DRC, Tanzania, Uganda, and Kenya — all with similar boarding school systems and mobile money infrastructure.' },
+  { icon: <Smartphone  size={22} />, bg: 'var(--blue-l)',   color: 'var(--blue)',   title: '9.8M MoMo accounts',       body: "Rwanda has 9.8 million registered mobile money accounts across MTN and Airtel. The payment rails are already in place. MTN's API is open to developers." },
+  { icon: <Landmark    size={22} />, bg: 'var(--green-l)',  color: 'var(--green)',  title: 'Pro-fintech government',    body: "Rwanda's Vision 2050 and digital economy strategy support fintech innovation. BNR Regulation 74/2023 creates a clear licensing framework." },
+  { icon: <Rocket      size={22} />, bg: 'var(--orange-l)', color: 'var(--orange)', title: 'First mover advantage',     body: 'Ugandan competitors (Kawallet with 62K users, DesisPay, Xazu) have not entered Rwanda. The window is open.' },
+  { icon: <TrendingUp  size={22} />, bg: 'var(--purple-l)', color: 'var(--purple)', title: 'Growing digital literacy',  body: '77% of adults use mobile money; 19% use it daily. We are channeling existing habits, not creating new ones.' },
+  { icon: <Target      size={22} />, bg: 'var(--red-l)',    color: 'var(--red)',    title: 'Clear target market',       body: 'Boarding school students are a concentrated, captive audience — 100 to 2,000 students per school. Easy to onboard, high daily engagement.' },
+  { icon: <Globe2      size={22} />, bg: 'var(--yellow-l)', color: 'var(--yellow)', title: 'East Africa expansion',     body: 'After Rwanda, the same model deploys in Burundi, DRC, Tanzania, Uganda, and Kenya — all with similar boarding school systems and mobile money infrastructure.' },
 ];
 
 const revStreams = [
-  { icon: '💸', title: 'Transaction Fee', body: '1.5–2.5% on every MTN MoMo or Airtel top-up. Zero friction for users. Scales linearly with student count.', tag: 'Primary · Recurring', color: 'var(--blue)', tagStyle: { background: 'rgba(26,107,255,.2)', color: '#7AA8FF' } },
-  { icon: '🏪', title: 'Vending Margin', body: 'Buy wholesale, sell at retail through our machines. 30–50% gross margin per item. Fully automated revenue.', tag: 'High Margin · Passive', color: 'var(--green)', tagStyle: { background: 'rgba(0,196,140,.15)', color: 'var(--green)' } },
-  { icon: '🏫', title: 'School Subscription', body: '$20–50/month per school for platform access, admin dashboard, and reporting tools. Predictable B2B SaaS.', tag: 'Predictable · B2B', color: 'var(--orange)', tagStyle: { background: 'rgba(255,112,67,.15)', color: '#FF8A65' } },
-  { icon: '💳', title: 'Card Issuance', body: '$0.50–1.00 per student card. One-time per student, with replacements on loss or damage.', tag: 'One-time · Scalable', color: 'var(--purple)', tagStyle: { background: 'rgba(124,58,237,.15)', color: '#A78BFA' } },
+  { icon: <Percent     size={28} />, title: 'Transaction Fee',      body: '1.5–2.5% on every MTN MoMo or Airtel top-up. Zero friction for users. Scales linearly with student count.', tag: 'Primary · Recurring',    color: 'var(--blue)',   tagStyle: { background: 'rgba(26,107,255,.2)', color: '#7AA8FF' } },
+  { icon: <ShoppingBag size={28} />, title: 'Vending Margin',       body: 'Buy wholesale, sell at retail through our machines. 30–50% gross margin per item. Fully automated revenue.',   tag: 'High Margin · Passive',  color: 'var(--green)',  tagStyle: { background: 'rgba(0,196,140,.15)', color: 'var(--green)' } },
+  { icon: <Building2   size={28} />, title: 'School Subscription',  body: '$20–50/month per school for platform access, admin dashboard, and reporting tools. Predictable B2B SaaS.',      tag: 'Predictable · B2B',      color: 'var(--orange)', tagStyle: { background: 'rgba(255,112,67,.15)', color: '#FF8A65' } },
+  { icon: <CreditCard  size={28} />, title: 'Card Issuance',        body: '$0.50–1.00 per student card. One-time per student, with replacements on loss or damage.',                       tag: 'One-time · Scalable',    color: 'var(--purple)', tagStyle: { background: 'rgba(124,58,237,.15)', color: '#A78BFA' } },
 ];
 
 const unitEcon = [
   { value: '$3.70', label: 'Avg monthly spend per student', color: 'var(--green)', dark: true },
-  { value: '~10%', label: 'Blended take rate', color: 'var(--green)', dark: true },
-  { value: '$4.40', label: 'Annual revenue per student', color: 'var(--green)', dark: true },
-  { value: '$44K', label: 'ARR at 10,000 students', color: 'var(--green)', dark: true },
+  { value: '~10%',  label: 'Blended take rate',             color: 'var(--green)', dark: true },
+  { value: '$4.40', label: 'Annual revenue per student',    color: 'var(--green)', dark: true },
+  { value: '$44K',  label: 'ARR at 10,000 students',        color: 'var(--green)', dark: true },
 ];
 
 const swot = [
   {
-    cls: 'sw-s', heading: '💪 Strengths',
+    cls: 'sw-s', heading: 'Strengths',
     items: [
       'Real, painful problem — lived experience of the founder',
       'Rwanda has zero direct competitors today',
@@ -54,7 +58,7 @@ const swot = [
     ],
   },
   {
-    cls: 'sw-w', heading: '⚠️ Weaknesses',
+    cls: 'sw-w', heading: 'Weaknesses',
     items: [
       'No existing brand recognition or customer base',
       'Hardware (vending machines) adds operational complexity',
@@ -64,33 +68,33 @@ const swot = [
     ],
   },
   {
-    cls: 'sw-o', heading: '🚀 Opportunities',
+    cls: 'sw-o', heading: 'Opportunities',
     items: [
       '400+ boarding schools in Rwanda — large captive market',
       'Expandable to TVET schools and universities',
       'Government is actively pro-fintech and pro-digital',
       'East Africa expansion (Burundi, DRC, Tanzania, Kenya)',
-      'Future: MTN MoMo card partnership, prison systems',
+      'Future: MTN MoMo card partnership, closed-environment systems',
       'Vending margin is a high-return independent revenue stream',
     ],
   },
   {
-    cls: 'sw-t', heading: '⚡ Threats',
+    cls: 'sw-t', heading: 'Threats',
     items: [
       'Ugandan competitors (Kawallet, DesisPay) could enter Rwanda',
       'Schools may resist changing established processes',
       'MoMo transaction fees could compress margins',
       'Regulatory changes could increase compliance costs',
-      'Power/connectivity challenges in rural schools',
+      'Power and connectivity challenges in rural schools',
     ],
   },
 ];
 
 const roadmap = [
-  { phase: 'Phase 1 · Months 1–3', title: 'Build & Validate', dot: 'active', items: ['Backend API + parent web app', 'MTN MoMo API integrated and tested', '100 RFID cards + 2 readers sourced', 'First pilot school partnership signed'] },
-  { phase: 'Phase 2 · Months 4–6', title: 'Pilot Deployment', dot: '', items: ['Live pilot: 200 students at 1 school', 'First vending machine prototype deployed', 'Collect feedback, iterate rapidly', 'Generate first revenue'] },
-  { phase: 'Phase 3 · Months 7–12', title: 'Scale to 10 Schools', dot: '', items: ['10 schools, 3,000–5,000 students', '5–10 vending machines deployed', 'Admin dashboard as standalone product', 'Norrsken / Visa accelerator application'] },
-  { phase: 'Phase 4 · Months 13–18', title: 'Series A Preparation', dot: '', items: ['50+ schools, 20,000+ students', 'TVET and university expansion', 'East Africa footprint (Burundi, DRC)', 'Series A fundraise for hardware scale'] },
+  { phase: 'Phase 1 · Months 1–3',   title: 'Build & Validate',        dot: 'active', items: ['Backend API and parent web app', 'MTN MoMo API integrated and tested', '100 RFID cards and 2 readers sourced', 'First pilot school partnership signed'] },
+  { phase: 'Phase 2 · Months 4–6',   title: 'Pilot Deployment',        dot: '',       items: ['Live pilot: 200 students at 1 school', 'First vending machine prototype deployed', 'Collect feedback and iterate rapidly', 'Generate first revenue'] },
+  { phase: 'Phase 3 · Months 7–12',  title: 'Scale to 10 Schools',     dot: '',       items: ['10 schools, 3,000–5,000 students', '5–10 vending machines deployed', 'Admin dashboard as standalone product', 'Norrsken / Visa accelerator application'] },
+  { phase: 'Phase 4 · Months 13–18', title: 'Series A Preparation',    dot: '',       items: ['50+ schools, 20,000+ students', 'TVET and university expansion', 'East Africa footprint (Burundi, DRC)', 'Series A fundraise for hardware scale'] },
 ];
 
 export default function Market() {
@@ -102,7 +106,7 @@ export default function Market() {
         label="Market Opportunity"
         labelColor="var(--orange)"
         title={<>A large, unserved market<br />with perfect infrastructure</>}
-        sub="Rwanda is ready. The mobile money rails exist. The problem is real. And no competitor is operating here yet."
+        sub="Rwanda is ready. The mobile money rails exist. The problem is real. No competitor is operating here yet."
       />
 
       {/* Market Size */}
@@ -116,7 +120,7 @@ export default function Market() {
             ))}
           </div>
           <p className="section-sub" style={{ marginTop: 32, marginBottom: 24 }}>
-            At just 10% market penetration (10,000 students), LooPeyi generates meaningful revenue. At full penetration, the transaction fee alone generates $810K+ annually — before vending machine margins and school subscriptions.
+            At 10% market penetration (10,000 students), LooPeyi generates meaningful revenue. At full penetration, the transaction fee alone generates $810K+ annually before vending machine margins and school subscriptions.
           </p>
           <div className="bar-chart fade-up">
             {bars.map(({ label, width, val, style, valStyle }) => (
@@ -154,7 +158,7 @@ export default function Market() {
           <div className="rev-model-grid">
             {revStreams.map(({ icon, title, body, tag, color, tagStyle }) => (
               <div key={title} className="rev-card fade-up" style={{ background: 'rgba(255,255,255,.04)', border: '1px solid rgba(255,255,255,.08)', ['--rc-color' as string]: color }}>
-                <div className="rc-icon">{icon}</div>
+                <div className="rc-icon" style={{ color }}>{icon}</div>
                 <h3 style={{ color: 'var(--white)' }}>{title}</h3>
                 <p>{body}</p>
                 <span className="rc-tag" style={tagStyle}>{tag}</span>
@@ -211,8 +215,8 @@ export default function Market() {
         heading="Invest in the future of campus payments"
         sub="We are seeking seed funding and strategic partners to deploy LooPeyi across Rwanda's boarding schools in 2026."
         buttons={[
-          { to: '/contact#investors', label: 'For Investors →', variant: 'primary' },
-          { to: '/contact', label: 'Contact Us', variant: 'ghost' },
+          { to: '/contact#investors', label: 'For Investors',  variant: 'primary' },
+          { to: '/contact',           label: 'Contact Us',     variant: 'ghost' },
         ]}
       />
     </>

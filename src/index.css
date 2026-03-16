@@ -320,7 +320,7 @@ ul  { list-style: none; }
   background: var(--accent-color, var(--red));
 }
 .problem-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
-.pc-icon { font-size: 32px; margin-bottom: 14px; }
+.pc-icon { margin-bottom: 14px; display: flex; align-items: center; justify-content: flex-start; }
 .problem-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600; margin-bottom: 8px; }
 .problem-card p  { font-size: 14px; color: var(--muted); line-height: 1.6; }
 
@@ -553,7 +553,7 @@ ul  { list-style: none; }
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0;
 }
-.sli-icon { font-size: 28px; flex-shrink: 0; margin-left: auto; }
+.sli-icon { display: flex; align-items: center; flex-shrink: 0; margin-left: auto; opacity: .45; }
 .sli-body h4 { font-family: 'Space Grotesk', sans-serif; font-size: 16px; font-weight: 600; margin-bottom: 4px; }
 .sli-body p  { font-size: 14px; color: var(--muted); line-height: 1.55; }
 
@@ -659,7 +659,8 @@ ul  { list-style: none; }
   width: 80px; height: 80px; border-radius: 50%;
   margin: 0 auto 20px;
   display: flex; align-items: center; justify-content: center;
-  font-size: 32px;
+  font-size: 14px; font-weight: 700; letter-spacing: .04em;
+  font-family: 'Space Grotesk', sans-serif;
 }
 .approach-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 600; margin-bottom: 4px; }
 .approach-card .role { font-size: 13px; font-weight: 600; color: var(--blue); margin-bottom: 12px; }
@@ -683,7 +684,7 @@ ul  { list-style: none; }
 .pf-feat p  { font-size: 12px; opacity: .7; line-height: 1.5; }
 .security-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
 .sec-card { background: var(--white); border-radius: var(--radius); border: 1px solid var(--border); padding: 24px; box-shadow: var(--shadow); }
-.sec-icon { font-size: 28px; margin-bottom: 12px; }
+.sec-icon { display: flex; align-items: center; margin-bottom: 12px; }
 .sec-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 600; margin-bottom: 6px; }
 .sec-card p  { font-size: 13px; color: var(--muted); line-height: 1.5; }
 
@@ -719,7 +720,7 @@ ul  { list-style: none; }
 
 .arch-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
 .arch-box { border-radius: var(--radius); padding: 20px 18px; text-align: center; border: 1px solid var(--border); }
-.arch-box .ab-icon { font-size: 28px; margin-bottom: 10px; }
+.arch-box .ab-icon { display: flex; align-items: center; justify-content: center; margin-bottom: 10px; }
 .arch-box h4 { font-size: 13px; font-weight: 600; margin-bottom: 6px; }
 .arch-box p  { font-size: 11px; color: var(--muted); line-height: 1.4; }
 
@@ -750,7 +751,6 @@ ul  { list-style: none; }
 
 /* About page extra */
 .value-card { background: var(--white); border-radius: var(--radius); border: 1px solid var(--border); padding: 28px; box-shadow: var(--shadow); }
-.value-card .vc-icon { font-size: 32px; margin-bottom: 14px; }
 .value-card h3 { font-family: 'Space Grotesk',sans-serif; font-size: 16px; font-weight: 600; margin-bottom: 8px; }
 .value-card p  { font-size: 14px; color: var(--muted); line-height: 1.6; }
 .mission-block { background: linear-gradient(135deg, var(--dark), var(--navy)); border-radius: 24px; padding: 60px 48px; color: var(--white); text-align: center; }

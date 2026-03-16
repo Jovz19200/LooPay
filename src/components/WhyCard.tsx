@@ -1,5 +1,7 @@
-﻿interface WhyCardProps {
-  icon: string;
+import type { ReactNode } from 'react';
+
+interface WhyCardProps {
+  icon: ReactNode;
   iconBg: string;
   iconColor: string;
   title: string;
