@@ -8,13 +8,14 @@ type TeamMember = {
   photo?: string;
   avatar?: string;
   avatarBg: string;
+  name?: string;
   role: string;
   dept: string;
   bio: string;
 };
 
 const team: TeamMember[] = [
-  { photo: '/founder.png', avatarBg: 'var(--blue-l)', role: 'Founder / CEO', dept: 'Product & Strategy', bio: "Master's student at CMU Africa. Former boarding school student — this problem is personal. Leads product vision, investor relations, school partnerships, and business strategy." },
+  { photo: '/founder.png', avatarBg: 'var(--blue-l)', name: 'Johovanis Niyogisubizo', role: 'Founder / CEO', dept: 'Product & Strategy', bio: "Master's student at CMU Africa. Former boarding school student — this problem is personal. Leads product vision, investor relations, school partnerships, and business strategy." },
   { avatar: '👨‍💻', avatarBg: 'var(--green-l)', role: 'Co-Founder / CTO', dept: 'Software Engineering', bio: 'Full-stack engineer. Builds the backend API, mobile money integration, parent web app, and admin dashboard. Owns all software architecture decisions.' },
   { avatar: '⚙️', avatarBg: 'var(--orange-l)', role: 'Hardware Lead', dept: 'Electrical & Computer Engineering', bio: 'ECE student. Designs and builds the RFID card readers and custom vending machine hardware prototypes. Bridges the physical and digital worlds.' },
 ];
@@ -87,12 +88,12 @@ export default function About() {
           <h2 className="section-title">Who's building LooPeyi</h2>
           <p className="section-sub">A small, focused team with the right skills and the deepest possible understanding of the problem.</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 24, marginBottom: 32 }}>
-            {team.map(({ photo, avatar, avatarBg, role, dept, bio }) => (
+            {team.map(({ photo, avatar, avatarBg, name, role, dept, bio }) => (
               <div key={role} className="approach-card fade-up">
                 {photo ? (
                   <img
                     src={photo}
-                    alt={role}
+                    alt={name ?? role}
                     style={{
                       width: 96, height: 96, borderRadius: '50%',
                       objectFit: 'cover', objectPosition: 'top',
@@ -105,8 +106,11 @@ export default function About() {
                 ) : (
                   <div className="approach-avatar" style={{ background: avatarBg }}>{avatar}</div>
                 )}
-                <h3>{role}</h3>
-                <div className="role">{dept}</div>
+                {name && (
+                  <h3 style={{ marginBottom: 2 }}>{name}</h3>
+                )}
+                <div className="role" style={{ marginBottom: name ? 4 : 12 }}>{role}</div>
+                <p style={{ fontSize: 12, color: 'var(--muted)', marginBottom: 8, fontWeight: 500 }}>{dept}</p>
                 <p>{bio}</p>
               </div>
             ))}
