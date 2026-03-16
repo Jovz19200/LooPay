@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { useFadeUp } from '../hooks/useFadeUp';
 import PageHero from '../components/PageHero';
 import CTASection from '../components/CTASection';
@@ -8,7 +8,7 @@ const flowSteps = [
   {
     num: '1', circleStyle: {},
     title: 'Parent tops up via Mobile Money',
-    body: 'The parent dials MTN MoMo or Airtel Money from any phone — feature phone or smartphone. They enter their child\'s BSWallet ID and send money. The process takes under 60 seconds and is available 24 hours a day, 7 days a week, from anywhere in Rwanda or abroad.',
+    body: 'The parent dials MTN MoMo or Airtel Money from any phone — feature phone or smartphone. They enter their child\'s LooPeyi ID and send money. The process takes under 60 seconds and is available 24 hours a day, 7 days a week, from anywhere in Rwanda or abroad.',
     icon: '📲',
     details: [
       'Works from any phone — no smartphone required for parents',
@@ -88,7 +88,7 @@ const personas: { id: PersonaId; label: string }[] = [
 
 const personaContent: Record<PersonaId, { heading: string; steps: { bg: string; title: string; body: string }[]; alertVariant: 'blue' | 'green' | 'orange'; alertIcon: string; alertBody: string }> = {
   student: {
-    heading: 'Life as a student with BSWallet',
+    heading: 'Life as a student with LooPeyi',
     steps: [
       { bg: 'var(--green)', title: 'Check your balance anytime', body: 'Tap your card on any reader to see your current balance. No asking admin.' },
       { bg: 'var(--green)', title: 'Buy what you need, when you need it', body: 'Vending machine is open 24/7. Canteen POS accepts your card instantly. No paperwork, no waiting.' },
@@ -96,7 +96,7 @@ const personaContent: Record<PersonaId, { heading: string; steps: { bg: string; 
       { bg: 'var(--green)', title: 'Full autonomy', body: "You decide what to buy and when. Within your parent's set limits — but no admin gatekeeper." },
     ],
     alertVariant: 'green', alertIcon: '💳',
-    alertBody: "Your card, your money, your choice. BSWallet gives boarding school students something simple but powerful: financial autonomy within a safe system. You don't need to explain why you want soap on a Tuesday.",
+    alertBody: "Your card, your money, your choice. LooPeyi gives boarding school students something simple but powerful: financial autonomy within a safe system. You don't need to explain why you want soap on a Tuesday.",
   },
   parent: {
     heading: 'Peace of mind for parents',
@@ -118,7 +118,7 @@ const personaContent: Record<PersonaId, { heading: string; steps: { bg: string; 
       { bg: 'var(--orange)', title: 'Vending inventory management', body: 'Dashboard shows stock levels. Restock notifications sent automatically.' },
     ],
     alertVariant: 'orange', alertIcon: '🏫',
-    alertBody: "BSWallet reduces your burden, not just theirs. Managing student cash manually is a thankless, liability-heavy job. BSWallet removes that responsibility entirely — and gives you better data about your school's financial operations than you've ever had.",
+    alertBody: "LooPeyi reduces your burden, not just theirs. Managing student cash manually is a thankless, liability-heavy job. LooPeyi removes that responsibility entirely — and gives you better data about your school's financial operations than you've ever had.",
   },
 };
 

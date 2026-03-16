@@ -1,4 +1,4 @@
-interface WhyCardProps {
+﻿interface WhyCardProps {
   icon: string;
   iconBg: string;
   iconColor: string;

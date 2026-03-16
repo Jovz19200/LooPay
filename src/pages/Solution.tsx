@@ -1,4 +1,4 @@
-import { useFadeUp } from '../hooks/useFadeUp';
+﻿import { useFadeUp } from '../hooks/useFadeUp';
 import PageHero from '../components/PageHero';
 import CTASection from '../components/CTASection';
 import Alert from '../components/Alert';
@@ -76,14 +76,14 @@ export default function Solution() {
         label="The Solution"
         labelColor="var(--green)"
         title={<>Three pillars.<br />One complete ecosystem.</>}
-        sub="BSWallet doesn't patch the broken cash system — it replaces it entirely with a connected digital payment infrastructure built on Rwanda's existing mobile money rails."
+        sub="LooPeyi doesn't patch the broken cash system — it replaces it entirely with a connected digital payment infrastructure built on Rwanda's existing mobile money rails."
       />
 
       {/* Overview + Pillars */}
       <section className="section-white content-section">
         <div className="container">
           <div className="section-label" style={{ color: 'var(--blue)' }}>Overview</div>
-          <h2 className="section-title">What BSWallet is</h2>
+          <h2 className="section-title">What LooPeyi is</h2>
           <p className="section-sub">A closed-loop payment ecosystem — money enters via mobile money, lives in student wallets, and is spent inside the school. Transparent at every step.</p>
           <Alert variant="blue" icon="💡">
             <strong>Closed-loop design:</strong> Funds flow through a controlled digital environment. Students spend at school-connected points. Administrators never handle cash. Parents see everything in real time.
@@ -134,14 +134,14 @@ export default function Solution() {
       <section className="section-dark content-section">
         <div className="container">
           <div className="section-label" style={{ color: 'var(--green)' }}>Competitive Edge</div>
-          <h2 className="section-title text-white">How BSWallet compares</h2>
+          <h2 className="section-title text-white">How LooPeyi compares</h2>
           <p className="section-sub text-muted-white">Similar platforms exist in Uganda and Nigeria. None operate in Rwanda. None integrate vending machines.</p>
           <div className="comp-table-wrap fade-up">
             <table className="comp-table">
               <thead>
                 <tr>
                   <th>Feature</th>
-                  <th className="ours">BSWallet ★</th>
+                  <th className="ours">LooPeyi ★</th>
                   <th>Kawallet (UG)</th>
                   <th>DesisPay (UG)</th>
                   <th>Traditional</th>

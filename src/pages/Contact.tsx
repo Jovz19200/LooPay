@@ -1,4 +1,4 @@
-import React, { useState, useEffect, type FormEvent } from 'react';
+﻿import React, { useState, useEffect, type FormEvent } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useFadeUp } from '../hooks/useFadeUp';
 import PageHero from '../components/PageHero';
@@ -117,7 +117,7 @@ function SchoolForm() {
   return (
     <div className="contact-form fade-up">
       <h3 style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: 20, fontWeight: 700, marginBottom: 6 }}>School Partnership</h3>
-      <p style={{ fontSize: 14, color: 'var(--muted)', marginBottom: 20 }}>Be one of the first schools to deploy BSWallet. Pilot schools get free setup and priority support.</p>
+      <p style={{ fontSize: 14, color: 'var(--muted)', marginBottom: 20 }}>Be one of the first schools to deploy LooPeyi. Pilot schools get free setup and priority support.</p>
       <Alert variant="green" icon="🏫" style={{ marginBottom: 20 }}>
         First 3 pilot schools get: free card issuance, free platform setup, dedicated support, and input into the product roadmap.
       </Alert>
@@ -169,7 +169,7 @@ function CoFounderForm() {
           </select>
         </div>
         <div className="form-group"><label>LinkedIn or GitHub</label><input type="url" placeholder="https://…" /></div>
-        <div className="form-group"><label>Why BSWallet? *</label><textarea required placeholder="What draws you to this specific problem and project?" /></div>
+        <div className="form-group"><label>Why LooPeyi? *</label><textarea required placeholder="What draws you to this specific problem and project?" /></div>
         <button type="submit" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center', padding: 14 }}>
           {loading ? 'Sending…' : 'Apply to Join →'}
         </button>
@@ -191,7 +191,7 @@ function ResearcherForm() {
   return (
     <div className="contact-form fade-up">
       <h3 style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: 20, fontWeight: 700, marginBottom: 6 }}>Research Partnership</h3>
-      <p style={{ fontSize: 14, color: 'var(--muted)', marginBottom: 20 }}>BSWallet is a live deployment of closed-loop fintech for financial inclusion. We welcome academic collaboration.</p>
+      <p style={{ fontSize: 14, color: 'var(--muted)', marginBottom: 20 }}>LooPeyi is a live deployment of closed-loop fintech for financial inclusion. We welcome academic collaboration.</p>
       <Alert variant="blue" icon="🔬" style={{ marginBottom: 20 }}>
         We have existing connections to CMU Africa's Upanzi Network (Gates Foundation-funded) and are open to joint research on mobile money security, financial inclusion, and IoT in education.
       </Alert>
@@ -247,7 +247,7 @@ export default function Contact() {
                 <div className="ci-icon" style={{ background: 'var(--blue-l)' }}>✉️</div>
                 <div>
                   <h4>Email</h4>
-                  <a href="mailto:hello@bswallet.rw">hello@bswallet.rw</a>
+                  <a href="mailto:hello@LooPeyi.rw">hello@LooPeyi.rw</a>
                   <p>We respond within 24 hours</p>
                 </div>
               </div>
@@ -277,7 +277,7 @@ export default function Contact() {
                     id="schools"
                     accentColor="var(--green)"
                     title="🏫 Boarding Schools"
-                    body="Looking to remove cash management from your administration and give students a better experience? Let's pilot BSWallet at your school."
+                    body="Looking to remove cash management from your administration and give students a better experience? Let's pilot LooPeyi at your school."
                     style={{ padding: '18px 18px 18px 24px' }}
                   />
                   <RichCard
@@ -296,7 +296,7 @@ export default function Contact() {
                   <RichCard
                     accentColor="var(--orange)"
                     title="🔬 Researchers"
-                    body="We welcome research partnerships — especially with CMU Upanzi Network, MIT D-Lab, and AFReLA. BSWallet is a live deployment of closed-loop fintech for financial inclusion."
+                    body="We welcome research partnerships — especially with CMU Upanzi Network, MIT D-Lab, and AFReLA. LooPeyi is a live deployment of closed-loop fintech for financial inclusion."
                     style={{ padding: '18px 18px 18px 24px' }}
                   />
                 </div>

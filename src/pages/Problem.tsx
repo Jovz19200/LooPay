@@ -1,4 +1,4 @@
-import { useFadeUp } from '../hooks/useFadeUp';
+﻿import { useFadeUp } from '../hooks/useFadeUp';
 import PageHero from '../components/PageHero';
 import CTASection from '../components/CTASection';
 import ProblemCard from '../components/ProblemCard';
@@ -91,14 +91,14 @@ export default function Problem() {
             ))}
           </div>
           <Alert variant="orange" icon="⚠️">
-            <strong>The administration is not always the enemy.</strong> Most school administrators are overwhelmed. They manage dozens of students' cash with no tools, no systems, and no training. BSWallet solves the problem for them too — removing the burden and liability of holding student funds entirely.
+            <strong>The administration is not always the enemy.</strong> Most school administrators are overwhelmed. They manage dozens of students' cash with no tools, no systems, and no training. LooPeyi solves the problem for them too — removing the burden and liability of holding student funds entirely.
           </Alert>
         </div>
       </section>
 
       <CTASection
         heading="There is a better way."
-        sub="BSWallet replaces this entire broken system with a digital payment ecosystem that works for students, parents, and schools simultaneously."
+        sub="LooPeyi replaces this entire broken system with a digital payment ecosystem that works for students, parents, and schools simultaneously."
         buttons={[
           { to: '/solution', label: 'See the Solution →', variant: 'primary' },
           { to: '/how-it-works', label: 'How It Works', variant: 'ghost' },

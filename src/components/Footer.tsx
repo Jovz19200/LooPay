@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -9,7 +9,7 @@ export default function Footer() {
             <div className="footer-logo">
               <span className="logo-icon">◈</span>
               <span className="logo-text">
-                BS<span className="logo-accent">Wallet</span>
+                Loo<span className="logo-accent">Peyi</span>
               </span>
             </div>
             <p>The first closed-loop digital payment ecosystem for boarding school students in Rwanda.</p>
@@ -35,8 +35,8 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <span>© 2026 BSWallet Rwanda. All rights reserved.</span>
-          <span>hello@bswallet.rw</span>
+          <span>© 2026 LooPeyi Rwanda. All rights reserved.</span>
+          <span>hello@LooPeyi.rw</span>
         </div>
       </div>
     </footer>

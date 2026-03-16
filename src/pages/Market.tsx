@@ -1,4 +1,4 @@
-import { useFadeUp } from '../hooks/useFadeUp';
+﻿import { useFadeUp } from '../hooks/useFadeUp';
 import PageHero from '../components/PageHero';
 import CTASection from '../components/CTASection';
 import StatBox from '../components/StatBox';
@@ -116,7 +116,7 @@ export default function Market() {
             ))}
           </div>
           <p className="section-sub" style={{ marginTop: 32, marginBottom: 24 }}>
-            At just 10% market penetration (10,000 students), BSWallet generates meaningful revenue. At full penetration, the transaction fee alone generates $810K+ annually — before vending machine margins and school subscriptions.
+            At just 10% market penetration (10,000 students), LooPeyi generates meaningful revenue. At full penetration, the transaction fee alone generates $810K+ annually — before vending machine margins and school subscriptions.
           </p>
           <div className="bar-chart fade-up">
             {bars.map(({ label, width, val, style, valStyle }) => (
@@ -209,7 +209,7 @@ export default function Market() {
 
       <CTASection
         heading="Invest in the future of campus payments"
-        sub="We are seeking seed funding and strategic partners to deploy BSWallet across Rwanda's boarding schools in 2026."
+        sub="We are seeking seed funding and strategic partners to deploy LooPeyi across Rwanda's boarding schools in 2026."
         buttons={[
           { to: '/contact#investors', label: 'For Investors →', variant: 'primary' },
           { to: '/contact', label: 'Contact Us', variant: 'ghost' },

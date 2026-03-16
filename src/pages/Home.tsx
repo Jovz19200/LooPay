@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+﻿import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { useFadeUp } from '../hooks/useFadeUp';
 import CTASection from '../components/CTASection';
@@ -81,7 +81,7 @@ export default function Home() {
             <span className="gradient-text">Finally safe.</span>
           </h1>
           <p className="hero-sub">
-            BSWallet is the first closed-loop digital payment ecosystem for boarding school
+            LooPeyi is the first closed-loop digital payment ecosystem for boarding school
             students in Rwanda — giving students financial autonomy, parents real-time
             transparency, and schools a cashless campus infrastructure.
           </p>
@@ -129,7 +129,7 @@ export default function Home() {
         <div className="container">
           <div className="section-label" style={{ color: 'var(--green)' }}>The Solution</div>
           <h2 className="section-title text-white">Three pillars. One ecosystem.</h2>
-          <p className="section-sub text-muted-white">BSWallet replaces the broken cash system with a connected digital payment infrastructure built on Rwanda's existing mobile money rails.</p>
+          <p className="section-sub text-muted-white">LooPeyi replaces the broken cash system with a connected digital payment infrastructure built on Rwanda's existing mobile money rails.</p>
           <div className="pillars">
             {pillars.map(({ num, icon, cls, title, body, points }) => (
               <div key={num} className={`pillar ${cls}`}>
@@ -212,14 +212,14 @@ export default function Home() {
             "I needed money on Wednesday.<br />I got it on <em>Friday</em>."
           </blockquote>
           <p className="quote-attr">— A Rwandan boarding school student describing their daily reality</p>
-          <p className="quote-follow">This is the problem BSWallet was built to solve.</p>
+          <p className="quote-follow">This is the problem LooPeyi was built to solve.</p>
         </div>
       </section>
 
       {/* ── CTA ── */}
       <CTASection
         heading="Ready to learn more?"
-        sub="We're currently seeking co-founders, school partners, and seed investors to bring BSWallet to Rwanda's boarding schools in 2026."
+        sub="We're currently seeking co-founders, school partners, and seed investors to bring LooPeyi to Rwanda's boarding schools in 2026."
         buttons={[
           { to: '/contact', label: 'Get in Touch', variant: 'primary' },
           { to: '/about', label: 'Meet the Team', variant: 'ghost' },

@@ -1,4 +1,4 @@
-interface StepListItemProps {
+﻿interface StepListItemProps {
   num: string | number;
   numBg: string;
   title: string;

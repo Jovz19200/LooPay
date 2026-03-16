@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+﻿import { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 const NAV_LINKS = [
@@ -26,7 +26,7 @@ export default function Navbar() {
         <Link to="/" className="nav-logo">
           <span className="logo-icon">◈</span>
           <span className="logo-text">
-            BS<span className="logo-accent">Wallet</span>
+            Loo<span className="logo-accent">Peyi</span>
           </span>
         </Link>
 

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import { useFadeUp } from '../hooks/useFadeUp';
 import PageHero from '../components/PageHero';
 import CTASection from '../components/CTASection';
@@ -13,7 +13,7 @@ const team = [
 const values = [
   { icon: '🔒', title: 'Student autonomy first', body: "Every design decision starts with one question: does this give the student more control over their own money? If not, we don't build it." },
   { icon: '👁️', title: 'Radical transparency', body: 'Parents see everything. Schools see everything. No hidden fees, no opaque processes. The whole platform is built on the premise that transparency is protection.' },
-  { icon: '📡', title: 'Built for real conditions', body: "We design for low connectivity, feature phones, and constrained budgets. BSWallet must work in a rural Rwandan boarding school, not a San Francisco co-working space." },
+  { icon: '📡', title: 'Built for real conditions', body: "We design for low connectivity, feature phones, and constrained budgets. LooPeyi must work in a rural Rwandan boarding school, not a San Francisco co-working space." },
   { icon: '🌍', title: 'Africa-native design', body: 'We are not adapting a Western product for Africa. We are building from Africa, on African infrastructure, for African realities.' },
 ];
 
@@ -23,7 +23,7 @@ export default function About() {
   return (
     <>
       <PageHero
-        label="About BSWallet"
+        label="About LooPeyi"
         labelColor="var(--purple)"
         title={<>Built by people who<br />understand the problem</>}
         sub="We are Rwandan students and engineers. We have lived inside this system. We are building the solution it deserves."
@@ -47,7 +47,7 @@ export default function About() {
           <div className="two-col">
             <div>
               <p style={{ fontSize: 16, lineHeight: 1.75, color: 'var(--text)', marginBottom: 20 }}>
-                BSWallet started with a simple, frustrating reality: boarding school students in Rwanda hand all their money to school administrators and then wait — sometimes days — to access their own funds.
+                LooPeyi started with a simple, frustrating reality: boarding school students in Rwanda hand all their money to school administrators and then wait — sometimes days — to access their own funds.
               </p>
               <p style={{ fontSize: 16, lineHeight: 1.75, color: 'var(--text)', marginBottom: 20 }}>
                 The problem is not a lack of technology. Rwanda has one of Africa's most advanced mobile money ecosystems. 77% of adults have MoMo wallets. The infrastructure exists. What was missing was a bridge between that infrastructure and the boarding school campus.
@@ -75,7 +75,7 @@ export default function About() {
       <section className="section-white content-section">
         <div className="container">
           <div className="section-label" style={{ color: 'var(--green)' }}>The Team</div>
-          <h2 className="section-title">Who's building BSWallet</h2>
+          <h2 className="section-title">Who's building LooPeyi</h2>
           <p className="section-sub">A small, focused team with the right skills and the deepest possible understanding of the problem.</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 24, marginBottom: 32 }}>
             {team.map(({ avatar, avatarBg, role, dept, bio }) => (
@@ -114,7 +114,7 @@ export default function About() {
 
       <CTASection
         heading="Join the mission"
-        sub="Whether you're a potential co-founder, school partner, investor, or researcher — there is a role for you in building BSWallet."
+        sub="Whether you're a potential co-founder, school partner, investor, or researcher — there is a role for you in building LooPeyi."
         buttons={[
           { to: '/contact', label: 'Get in Touch →', variant: 'primary' },
           { to: '/market', label: 'View the Market', variant: 'ghost' },
